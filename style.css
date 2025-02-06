@@ -41,8 +41,6 @@ header{
     background-color: black;
     color: var(--main-color);
     border: 0.15vw solid var(--main-color);
-    
-
 }
 
 .header_logo{
@@ -218,10 +216,6 @@ table{
     border-collapse: collapse;
 }
 
-
-
-
-
 .destacados_titulo{
     background-color: black;
     color: var(--main-color);
@@ -279,8 +273,36 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: 2vw;
     width: 70%;
 }
 
+.footer_info p{
+    transition: ease-in 0.3s;
+}
 
+.footer_redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+}
+
+.footer_redes img{
+    width: 3vw;
+    transition: ease-in 0.3s;
+}
+
+.footer_redes img:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.footer_info p:hover{
+    cursor: pointer;
+    border-bottom: 0.15vw solid var(--main-color);
+    scale: 1.1;
+    padding-bottom: 0;
+}
