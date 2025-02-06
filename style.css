@@ -1,0 +1,182 @@
+:root{
+    --bg-color: #F9FF89;
+    --main-color: #FFF200;
+}
+
+
+body{
+    background-color: var(--bg-color);
+    font-family: "Krona One", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: var(--main-color);
+    padding: 0.6vw 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+
+}
+
+.btn{
+    background-color: var(--main-color);
+    color: black;
+    border: 0.15vw solid black;
+    font-family: "Krona One", sans-serif;
+    padding: 0.5vw 1vw;
+    border-radius: 4vw;
+    font-size: 1vw;
+    margin-right: 1vw;
+    width: 10vw;
+}
+
+.header_logo{
+    width: 24vw;
+}
+
+.header_logo img{
+width: 7vw;
+padding-left: 5vw;
+}
+
+.header_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 24vw;
+    font-size: 1vw;
+}
+
+.header_links a{
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 0 1vw;
+}
+
+.header_menu{
+    width: 24vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1vw;
+    margin: 0;
+}
+
+.header_menu a{
+    padding-right: 2vw;
+    
+}
+
+.menu_img{
+    width: 2vw;
+}
+
+.container{
+
+    display: grid;
+    grid-template-columns:  25% 50% 25%;
+    grid-template-rows: 35vw auto;
+    grid-template-areas: 
+    "container_deportes container_partido container_promocion"
+    "container_destacados container_destacados container_destacados";
+
+}
+
+.container_deportes{
+    grid-area: container_deportes;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 45%));
+    gap: 0.5vw;
+    margin: 2.5vw 1vw;
+}
+
+.container_deportes div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    width: 80%;
+    background-color: black;
+    background-size: cover;
+    border-radius: 1vw;
+    color: var(--main-color);
+    font-size: 1vw;
+}
+
+.container_deportes div a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.container_deportes div a p{
+    text-align: center;
+}
+
+.container_deportes div img{
+    width: 4vw;
+}
+
+.container_deportes div:hover{
+    cursor: pointer;
+    scale: 1.05;
+    transition: ease-in 0.5s;
+}
+
+.container_partido{
+    grid-area: container_partido;
+    background-image: url(img/El\ Clasico\ 1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin: 2vw 2.8vw;
+    width: 90%;
+    height: 90%;
+    border-radius: 1vw;
+    position: relative;
+    padding: 0;
+}
+
+.container_partido button{
+    position: absolute;
+    bottom: 1.5vw;
+    right: 0.5vw;
+}
+
+.container_promocion{
+    grid-area: container_promocion;
+    background-color: black;
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 1vw;
+    font-size: 1.5vw;
+    text-align: center;
+    border-radius: 1vw;
+}
+
+.container_promocion button{
+    font-size: 1.8vw;
+    width: 15vw;
+    height: 5vw;
+    margin-top: 1vw;
+    border-radius: 2vw;
+}
+
+.container_destacados{
+    grid-area: container_destacados;
+    margin: 3vw 10vw;
+    width: 100%;
+}
+
+.container_destacados th{
+    
+}
