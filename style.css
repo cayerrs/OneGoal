@@ -91,9 +91,10 @@ padding-left: 5vw;
 .container_deportes{
     grid-area: container_deportes;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25%, 45%));
+    grid-template-columns: repeat(2, minmax(25%, 45%));
     gap: 0.5vw;
-    margin: 2.5vw 1vw;
+    margin: 2.5vw 0;
+    margin-left: 2VW;
 }
 
 .container_deportes div{
@@ -171,12 +172,43 @@ padding-left: 5vw;
     border-radius: 2vw;
 }
 
+
+
 .container_destacados{
     grid-area: container_destacados;
-    margin: 3vw 10vw;
-    width: 100%;
+    margin: 3vw 2vw;
+    width: 98%;
+    
 }
 
-.container_destacados th{
-    
+table{
+    border: 0.3vw solid black;
+    width: 99%;
+    border-collapse: collapse;
+}
+
+
+
+
+
+.destacados_titulo{
+    background-color: black;
+    color: var(--main-color);
+    width: 100%;
+    margin: 0;
+}
+
+tr{
+    border: 0.3vw solid black;
+    border-collapse: collapse;
+}
+
+th:first-child, td:first-child{
+    text-align: left;
+}
+
+td{
+    border: 0.3vw solid black;
+    border-collapse: collapse;
+    text-align: center;
 }
