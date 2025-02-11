@@ -33,7 +33,7 @@ header{
     font-size: 1vw;
     margin-right: 1vw;
     width: 10vw;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.2s;
 }
 
 .btn:hover{
@@ -45,7 +45,7 @@ header{
 
 .header_logo{
     width: 24vw;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.1s;
 }
 
 .header_logo img{
@@ -70,7 +70,7 @@ padding-left: 5vw;
     color: var(--main-color);
     text-decoration: none;
     margin: 0 1vw;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.1s;
 }
 
 .header_links a:hover{
@@ -92,7 +92,7 @@ padding-left: 5vw;
 
 .header_menu a{
     margin-right: 2vw;
-    transition: ease-in 0.3s;    
+    transition: ease-in 0.1s;    
 }
 
 .header_menu a:hover{
@@ -210,6 +210,10 @@ padding-left: 5vw;
     
 }
 
+.container_destacados{
+    font-size: 1vw;
+}
+
 table{
     border: 0.2vw solid black;
     width: 99%;
@@ -239,7 +243,8 @@ td{
 }
 
 .destacados_apuesta{
-    transition: ease-in 0.3s;
+    width: 16%;
+    transition: ease-in 0.2s;
 }
 
 .destacados_apuesta:hover{
@@ -305,4 +310,19 @@ footer{
     border-bottom: 0.15vw solid var(--main-color);
     scale: 1.1;
     padding-bottom: 0;
+}
+
+
+/*ESTILOS PAGINA REGISTRO*/
+.registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+.registro div{
+    margin-top: 1vw;
+    
 }
