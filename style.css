@@ -1,12 +1,13 @@
 :root{
     --bg-color: #F9FF89;
     --main-color: #FFF200;
+    --main-font: "Krona One", sans-serif;
 }
 
 
 body{
     background-color: var(--bg-color);
-    font-family: "Krona One", sans-serif;
+    font-family: var(--main-font);
     margin: 0;
     padding: 0;
 }
@@ -27,7 +28,7 @@ header{
     background-color: var(--main-color);
     color: black;
     border: 0.15vw solid black;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--main-font);
     padding: 0.5vw 1vw;
     border-radius: 4vw;
     font-size: 1vw;
@@ -50,7 +51,7 @@ header{
 
 .header_logo img{
 width: 7vw;
-padding-left: 5vw;
+padding-left: 10vw;
 }
 
 .header_logo:hover{
@@ -262,7 +263,7 @@ footer{
     align-items: center;
     padding: 1vw 2vw;
     font-size: 1vw;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--main-font);
     margin-top: 2vw;
 }
 
@@ -313,7 +314,10 @@ footer{
 }
 
 
-/*ESTILOS PAGINA REGISTRO*/
+
+
+
+/*----------------ESTILOS PAGINA REGISTRO--------------------*/
 .registro{
     display: flex;
     flex-direction: column;
@@ -322,7 +326,167 @@ footer{
     margin-top: 2vw;
 }
 
-.registro div{
-    margin-top: 1vw;
+.registro h2{
+    font-size: 1.8vw;
+}
+
+.registro_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "label input .";
+    margin-bottom: 1vw;
+    width: 80%;
+    gap: 0.5vw;
     
+}
+
+.registro_input{
+    grid-area: input;
+    margin: 1vw 0;
+    width: 100%;
+    height: 3vw;
+    background-color: transparent;
+    border: 0.2vw solid black;
+    border-radius: 0.7vw;
+    font-family: var(--main-font);
+    font-size: 1.2vw;
+}
+
+.registro_label{
+    grid-area: label;
+    text-align: right;
+    margin: 2vw 2vw;
+    font-size: 1.2vw;
+    
+}
+
+.registro_checkbox{
+    grid-area: input;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox_style{
+    margin-right: 0.5vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 0.2vw solid black;
+    border-radius: 0.4vw;
+    appearance: none;
+    --webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox_style:checked{
+    background-color: black;
+}
+
+.registro_btn{
+    grid-area: input;
+    font-family: var(--main-font);
+    padding: 0.5vw 1vw;
+    border-radius: 4vw;
+    font-size: 1vw;
+    margin-right: 1vw;
+    width: 10vw;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+    background-color: black;
+    color: var(--bg-color);
+    border: 0.15vw solid black;
+    width: 100%;
+}
+
+.registro_btn:hover{
+    background-color: var(--bg-color);
+    color: black;
+    
+}
+
+.o{
+    grid-area: input;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3vw;
+}
+
+.registro_hr{
+    width: 80%;
+    border: 0.1vw solid black;
+    margin: 1vw 0;
+}
+
+
+
+
+/*----------------ESTILOS PERFIL--------------------*/
+
+.contenido_perfil{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.perfil_principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 1vw 4vw;
+}
+
+.perfil_principal img{
+    width: 16vw;
+    border-radius: 50%;
+}
+
+.perfil_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 50%;
+    margin-left: 0;
+    padding-left: 0;
+}
+.info_nombre{
+    font-size: 1.5vw;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    /* justify-content: left; */
+}
+
+.info_datos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0;
+}
+
+.info_datos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_datos h5{
+    font-size: 1.8vw;
+    margin: 0;
+}
+
+.info_datos p{
+    font-size: 1.2vw;
+    margin: 0;
 }
