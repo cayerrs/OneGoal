@@ -12,6 +12,8 @@ body{
     padding: 0;
 }
 
+/* --------------------ESTILOS DEL INDEX------------------------ */
+
 header{
     background-color: black;
     color: var(--main-color);
@@ -23,6 +25,7 @@ header{
     height: auto;
 
 }
+
 
 .btn{
     background-color: var(--main-color);
@@ -313,11 +316,100 @@ footer{
     padding-bottom: 0;
 }
 
+/* ----------------------------------------------------- */
+/* -----------------MEDIA QUERY INDEX------------------- */
+/* ----------------------------------------------------- */
+
+/* Media query para pantallas mayores a 576px */
+@media screen and (min-width: 576px) {
+    /* Ajustes para el header */
+    header {
+        padding: 1vw 0;
+    }
+
+    .header_logo img {
+        width: 6vw;
+        padding-left: 8vw;
+    }
+
+    .header_links {
+        width: 20vw;
+        font-size: 0.9vw;
+    }
+
+    .header_menu {
+        width: 20vw;
+    }
+
+    .menu_img {
+        width: 1.8vw;
+    }
+
+    /* Ajustes para el contenedor principal */
+    .container {
+        grid-template-rows: 30vw auto;
+    }
+
+    .container_deportes {
+        margin-left: 1.5vw;
+    }
+
+    .container_deportes div {
+        font-size: 0.9vw;
+    }
+
+    .container_deportes div img {
+        width: 3.5vw;
+    }
+
+    .container_partido {
+        margin: 1.5vw 2.5vw;
+    }
+
+    .container_promocion {
+        font-size: 1.2vw;
+    }
+
+    .container_promocion button {
+        font-size: 1.5vw;
+        width: 12vw;
+        height: 4vw;
+    }
+
+    /* Ajustes para la sección de apuestas destacadas */
+    .container_destacados {
+        font-size: 0.9vw;
+    }
+
+    /* Ajustes para el footer */
+    footer {
+        padding: 0.8vw 1.5vw;
+        font-size: 0.9vw;
+    }
+
+    .footer_logo img {
+        width: 8vw;
+    }
+
+    .footer_info {
+        width: 60%;
+    }
+
+    .footer_redes {
+        width: 15%;
+    }
+
+    .footer_redes img {
+        width: 2.5vw;
+    }
+}
 
 
 
+/*----------------------------------------------------- */
+/*--------------ESTILOS PAGINA REGISTRO-----------------*/
+/*----------------------------------------------------- */
 
-/*----------------ESTILOS PAGINA REGISTRO--------------------*/
 .registro{
     display: flex;
     flex-direction: column;
@@ -368,9 +460,13 @@ footer{
     justify-content: space-between;
 }
 
+.registro_checkbox label{
+    font-size: 1.2vw;
+}
+
 .checkbox_style{
     margin-right: 0.5vw;
-    width: 1.5vw;
+    width: 2.5vw;
     height: 1.5vw;
     border: 0.2vw solid black;
     border-radius: 0.4vw;
@@ -422,9 +518,9 @@ footer{
 
 
 
-
-/*----------------ESTILOS PERFIL--------------------*/
-
+/*----------------------------------------------------- */
+/*--------------------ESTILOS PERFIL--------------------*/
+/*----------------------------------------------------- */
 .contenido_perfil{
     margin: 0 10vw;
     padding: 0;
@@ -569,9 +665,9 @@ footer{
 
 
 
-
+/*------------------------------------------------------ */
 /* ------------------ESTILOS DESAFIOS------------------- */
-
+/*------------------------------------------------------ */
 .contenido_desafios{
     display: flex;
     flex-direction: row;
@@ -661,8 +757,9 @@ footer{
 }
 
 
-
+/*----------------------------------------------------- */
 /* ------------------ESTILOS RANKING------------------- */
+/*----------------------------------------------------- */
 
 .contenido_ranking{
     display: flex;
@@ -781,8 +878,9 @@ empty {
 }
 
 
-
+/* ----------------------------------------------------- */
 /* ------------------ESTILOS APUESTAS------------------- */
+/* ----------------------------------------------------- */
 
 .contenido_apuestas{
     display: flex;
