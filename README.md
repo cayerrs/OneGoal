@@ -24,4 +24,4 @@ Este proyecto está licenciado bajo **Creative Commons BY**. Puedes compartir y 
 ## Mejoras y Cambios en Cada Versión
 ### v0
 - Creación de la estructura HTML y estilos CSS.
-- Diseño responsivo para diferentes dispositivos.
+- Diseño responsivo para movil.
