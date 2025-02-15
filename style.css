@@ -446,6 +446,10 @@ footer{
         width: 100%;
         text-align: center;
     }
+
+    .footer_info p{
+        width: 19%;
+    }
     
     .footer_redes{
         width: 40%;
@@ -641,7 +645,7 @@ footer{
         margin-right: 1vw;
         width: auto;
         border: 0.5vw solid black;
-        height: 6vw;
+        height: 7.5vw;
     }
     
     .o{
@@ -657,7 +661,7 @@ footer{
 }
 
 /*----------------------------------------------------- */
-/*--------------------FIN ESTILOS REGISTRO--------------------*/
+/*--------------------FIN ESTILOS REGISTRO--------------*/
 /*----------------------------------------------------- */
 
 /*----------------------------------------------------- */
@@ -670,7 +674,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-between; */
-    width: 100%;
+    width: 89%;
 }
 
 .perfil_principal{
@@ -678,7 +682,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    width: 90%;
+    width: 100%;
     margin: 1vw 0;
 }
 
@@ -693,7 +697,7 @@ footer{
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    width: 50%;
+    width: 60%;
     padding-left: 0;
     margin: 0 0 7vw 11vw;
 }
@@ -710,7 +714,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin: 0;
 }
 
@@ -739,7 +743,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 95%;
     margin: 0;
 }
 
@@ -763,7 +767,7 @@ footer{
 
 .info_apuestas{
     display: grid;
-    width: 80%;
+    width: 95%;
     grid-template-columns: repeat(auto-fit, minmax(250px, 25%));
 }
 
@@ -804,6 +808,75 @@ footer{
         color: var(--bg-color);
     }
 }
+
+/*------------------------------------------------------ */
+/* ------------------MEDIA QUERY PERFIL------------------- */
+/*------------------------------------------------------ */
+
+@media screen and (max-width: 500px) {
+
+    .contenido_perfil{
+        padding-left: 6vw;
+        margin: 0;
+    }
+    
+    .perfil_principal img{
+        width: 20vw;
+    }
+    
+    .perfil_info{
+        width: 50%;
+        padding-left: 0;
+        margin: 0 0 7vw 11vw;
+    }
+    .info_nombre{
+        font-size: 3.5vw;
+    }
+
+    .info_datos div{
+        margin-right: 2vw;
+    }
+    
+    .info_datos h5{
+        font-size: 3vw;
+    }
+    
+    .info_datos p{
+        font-size: 2vw;
+    }
+    
+    .info_biografia{
+       font-size: 3vw;
+    }
+    
+    .perfil_botones{
+        width: 98%;
+    }
+    
+    .info_btn{
+        padding: 0.8vw 1vw;
+        font-size: 2.5vw;
+        border: 0.8vw solid black;
+    }
+    
+    .info_apuestas{
+        grid-template-columns: repeat(auto-fit, minmax(190px, 45%));
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .apuestas_apuesta{
+        border: 0.4vw solid black;
+        border-radius: 1.3vw;
+        font-size: 3vw;
+    }
+
+
+}
+
+/*------------------------------------------------------ */
+/* ------------------FIN ESTILOS PERFIL------------------- */
+/*------------------------------------------------------ */
 
 
 
@@ -897,6 +970,76 @@ footer{
     color: var(--main-color);
     border: 0.19vw solid var(--main-color);
 }
+
+
+/*------------------------------------------------------ */
+/* ------------------MEDIA QUERY PERFIL------------------- */
+/*------------------------------------------------------ */
+
+@media screen and (max-width: 500px) {
+
+    .contenido_desafios{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5vw 10vw;
+    }
+    
+    .desafios_tipos{
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .desafios_tipos a{
+        font-size: 2vw;
+    }
+    
+    .desafios_tipos a:hover{
+        border-bottom: 0.4vw solid black;
+    }
+    
+    .desafios{
+        border-radius: 1.4vw;
+        padding: 1.2vw;
+    }
+    
+    .desafios_misiones{
+        grid-template-columns: repeat(auto-fit, 100%);
+    }
+    
+    .misiones_mision{
+        border: 0.4vw solid var(--main-color);
+        border-radius: 1.2vw;
+        height: 10vw;
+    }
+    
+    .misiones_mision h4{
+        font-size: 2.3vw;
+    }
+    
+    .desafios_btn{
+        padding: 1vw 1.5vw;
+        border-radius: 1.5vw;
+        font-size: 2vw;
+        cursor: pointer;
+        background-color: var(--main-color);
+        color: black;
+        border: 0.19vw solid black;
+        width: 50%;
+        height: 5vw;
+    }
+    
+    .desafios_btn:hover{
+        background-color: black;
+        color: var(--main-color);
+        border: 0.19vw solid var(--main-color);
+    }
+
+}
+
+/*----------------------------------------------------- */
+/* ------------------FIN ESTILOS DESAFIOS------------------- */
+/*----------------------------------------------------- */
 
 
 /*----------------------------------------------------- */
@@ -1020,6 +1163,84 @@ empty {
 }
 
 
+/*------------------------------------------------------ */
+/* ------------------MEDIA QUERY PERFIL------------------- */
+/*------------------------------------------------------ */
+
+@media screen and (max-width: 500px) {
+
+    .contenido_ranking{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5vw 10vw;
+        width: 80%;
+    }
+    
+    .ranking_tipos{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .ranking_tipos a{
+        font-size: 2vw;
+    }
+    
+    .ranking_tipos a:hover{
+        border-bottom: 0.3vw solid black;
+    }
+    
+    .ranking{
+        gap: 2vw;
+    }
+    
+    .ranking_hr h5{
+       margin-left: 2vw;
+       font-size: 1.5vw;
+    }
+    
+    .users_user{
+        border: 0.4vw solid var(--main-color);
+        margin: 0.7vw;
+        border-radius: 0.9vw;
+        height: 13vw;
+        text-align: center;
+        padding: 1vw;
+    }
+    
+    .user_pfp img{
+        width: 9vw;
+    }
+    
+    .user_stats{
+        width: 60%;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    
+        border-left: 0.3vw solid var(--main-color);
+    }
+    
+    .user_stats h3{
+        margin-left: 5.5vw;
+        font-size: 2vw;
+    }
+    
+    .users_user h4{
+        font-size: 2vw;
+        margin: 0;
+    }
+
+}
+
+/* ----------------------------------------------------- */
+/* ------------------FIN ESTILOS PERFIL------------------- */
+/* ----------------------------------------------------- */
+
+
 /* ----------------------------------------------------- */
 /* ------------------ESTILOS APUESTAS------------------- */
 /* ----------------------------------------------------- */
@@ -1066,3 +1287,37 @@ empty {
     padding: 1.2vw;
 }
 
+/* ----------------------------------------------------- */
+/* ------------------MEDIA QUERY APUESTAS------------------- */
+/* ----------------------------------------------------- */
+
+@media screen and (max-width: 500px) {
+
+    .contenido_apuestas{
+        flex-direction: column;
+        align-items: center;
+        margin: 5vw 10vw;
+        gap: 3vw;
+        width: 80%;
+    }
+    
+    .apuestas_deportes{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1vw;
+        margin-top: 2vw;
+        width: 80%;
+    }
+    
+    .apuestas_deportes a{
+        font-size: 2.3vw;
+    }
+    
+    .apuestas_deportes a:hover{
+        border-bottom: 0.4vw solid black;
+    }
+
+
+
+}
