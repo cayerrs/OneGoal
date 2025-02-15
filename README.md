@@ -1,8 +1,7 @@
 # Proyecto: Página Web de Casas Rurales en los Alpes Suizos
 
 ## Descripción del Proyecto
-Este proyecto consiste en una página web estática diseñada para promover y facilitar la reserva de casas rurales en los Alpes Suizos. La plataforma proporciona información detallada sobre cada alojamiento y ofrece una experiencia visual atractiva para fomentar el turismo en la región.
-
+Este proyecto consiste en una página web estática destinada a ser una red social de apuestas, donde tu puedas tener tus perfiles comparar tus apuestas con tus amigos, hacer desafíos, rankings, etc.
 ## Tecnologías Utilizadas
 - **HTML5**: Estructura del sitio web.
 - **CSS3**: Diseño y estilos responsivos.
