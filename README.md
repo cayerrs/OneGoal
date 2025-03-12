@@ -31,7 +31,7 @@ Este proyecto está licenciado bajo **Creative Commons BY**. Puedes compartir y 
 - Creacion de chat de IA con tailwindcss (En mi caso en otra página distinta tal y como hablamos).
 
 ### v2
--Mejorar accesibilidad de la página hasta estar por encima de 95.
+- Mejorar accesibilidad de la página hasta estar por encima de 95.
 
 ## Apuntes Importantes
 Una vez cargada la página dirigirse directamente al apartado de perfil, que le llevará al registro, una vez allí si pulsa otra vez el botón del perfil le llevará al perfil registrado
