@@ -1,4 +1,4 @@
-# Proyecto: Página Web de Casas Rurales en los Alpes Suizos
+# Proyecto: Página Web de Apuestas OneGoal
 
 ## Descripción del Proyecto
 Este proyecto consiste en una página web estática destinada a ser una red social de apuestas, donde tu puedas tener tus perfiles comparar tus apuestas con tus amigos, hacer desafíos, rankings, etc.
