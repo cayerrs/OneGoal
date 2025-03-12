@@ -12,6 +12,75 @@ body{
     padding: 0;
 }
 
+/*---------------------------------------------------*/
+/* ----------------ESTILOS BOTON IA-----------------*/
+/*---------------------------------------------------*/
+
+.floating-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.floating-button {
+    background-color: black;
+    padding: 16px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.floating-button:active {
+    transform: scale(0.95);
+}
+
+.floating-button img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/*---------------------------------------------------*/
+/* ----------------ANIMACIONES NUEVAS-----------------*/
+/*---------------------------------------------------*/
+
+.slide-in{
+    animation: slide-in 0.6s ease-out;
+}
+
+@keyframes slide-in{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate-light{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 /*--------------------------------------------------------------*/
 /* --------------------ESTILOS DEL INDEX------------------------ */
 /*--------------------------------------------------------------*/
@@ -97,14 +166,13 @@ padding-left: 10vw;
 }
 
 .header_menu a{
-    margin-right: 2vw;
-    transition: ease-in 0.1s;    
+    margin-right: 2vw;    
 }
 
 .header_menu a:hover{
     cursor: pointer;
-    scale: 1.1;
-    border-bottom: 0.15vw solid var(--main-color);
+    animation: rotate-light 2s ease-in-out infinite alternate;
+
 }
 
 .menu_img{
@@ -342,7 +410,8 @@ footer{
     }
     
     .menu_img{
-        width: 3.5vw;
+        width: 4vw;
+        margin-left: 1.8vw;
     }
     
     .container{
@@ -675,6 +744,7 @@ footer{
     align-items: center;
     justify-content: space-between; */
     width: 89%;
+    animation: fade-in 1s ease-in-out forwards;
 }
 
 .perfil_principal{
